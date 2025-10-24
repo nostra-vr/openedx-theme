@@ -1,8 +1,11 @@
 #https://hatch.pypa.io/latest/config/build/
 
+
 [project]
-name = "tutor-indigo"
-description = "Indigo theme plugin for Tutor"
+name = "openedx-theme-nostra"
+version = "20.0.1"
+description = "Nostra theme plugin for Tutor"
+
 readme = { file = "README.rst", content-type = "text/x-rst" }
 license = { text = "AGPLv3" }
 requires-python = ">=3.9"
@@ -27,9 +30,6 @@ dependencies = [
   "tutor>=20.0.0,<21.0.0"
 ]
 
-# hatch_build.py will set it later
-dynamic = ["version"]
-
 [project.optional-dependencies]
 dev = [
   "tutor[dev]>=20.0.0,<21.0.0",
@@ -38,7 +38,7 @@ dev = [
 ]
 
 [project.entry-points."tutor.plugin.v1"]
-indigo = "tutorindigo.plugin"
+openedx-theme-nostra = "tutorindigo.plugin"
 
 [project.urls]
 Code = "https://github.com/overhangio/tutor-indigo"
